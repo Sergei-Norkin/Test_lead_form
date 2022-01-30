@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Форма обратной связи</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="https://unpkg.com/imask@6.3.0-alpha.0/dist/imask.js"></script>
+        <script type="text/javascript" src="script.js"></script>   
+    </head>
+    <body>
+        <div class="main-block">
+            <div class="form-wrapper">
+                <div class="title">Обратная форма</div>
+                <form class="form" id="feedback" novalidate>
+                    <div class="form-block-1">
+                        <div class="name-block"> 
+                            <input class="name" type="name" id="name" form="feedback" maxlength="50" name="name" required>
+                            <label class="label-name" for="name">ФИО</label>
+                            <span class="error-name">Имя указано неверно</span>
+                        </div>
+                        <div class="tel-block">
+                            <input class="tel" type="tel" id="tel" form="feedback" value="+7" maxlength="18" name="tel" required>
+                            <label class="label-tel" for="tel">Телефон</label>
+                            <span class="error-tel">Телефон указан неверно</span>
+                        </div>
+                    </div>
+                    <div class="form-block-2">
+                        <div class="email-block">
+                            <input class="email" type="email" id="email" form="feedback" name="email" maxlength="40">
+                            <label class="label-email" for="email">E-mail</label>
+                            <span class="error-email">Почта указана неверно</span>
+                        </div>
+                    </div>
+                    <div class="form-block-3">
+                        <div class="text-block">
+                            <textarea class="text-input" id="text" form="feedback" maxlength="300" name="text"></textarea>
+                            <label class="label-text" for="text">Сообщение</label>
+                        </div>
+                    </div>
+                    <div class="privacy-block">
+                        <p class="privacy-policy">Отправляя форму, Вы соглашаетесь на&nbsp;<a target="_blank" href="https://www.google.com/"> обработку персональных данных</a></p>
+                        <input class="submit-button" type="submit" form="feedback" value="Отправить">
+                        <span class="error-main">Ошибка отправки формы, проверьте правильность заполнения полей</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
